@@ -1,117 +1,50 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow strict-local
- */
-
 import React from 'react';
-import type {Node} from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
+import {Text, View, StyleSheet} from 'react-native';
+import ButtonOnPress from './components/ButtonOnPress';
+import LearnState from './components/LearnState';
+import LearnProps from './components/LearnProps';
+import LearnStyle from './components/LearnStyle';
+import LearnTextInput from './components/LearnTextInput';
+import LearnForm from './components/LearnForm';
+import LearnFlatList from './components/LearnFlatList';
+import LearnCustomList from './components/LearnCustomList';
+import LearnDynamicGrid from './components/LearnDynamicGrid';
+import LearnLoopWithFlatlist from './components/LearnLoopWithFlatlist';
+import LearnSectionList from './components/LearnSectionList';
+import LearnUseEffect from './components/LearnUseEffect';
+import ComponentDidUpdate from './components/ComponentDidUpdate';
+import HideShow from './components/HideShow';
+import ComponentDidUnmount from './components/ComponentDidUnmount';
+import Flex from './components/Flex';
+import TouchableHighlightButton from './components/TouchableHighlightButton';
+import TouchOpacity from './components/TouchOpacity';
+import MultiRadio from './components/MulitRadio';
 
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
-
-/* $FlowFixMe[missing-local-annot] The type annotation(s) required by Flow's
- * LTI update could not be added via codemod */
-const Section = ({children, title}): Node => {
-  const isDarkMode = useColorScheme() === 'dark';
+const App = () => {
   return (
-    <View style={styles.sectionContainer}>
-      <Text
-        style={[
-          styles.sectionTitle,
-          {
-            color: isDarkMode ? Colors.white : Colors.black,
-          },
-        ]}>
-        {title}
-      </Text>
-      <Text
-        style={[
-          styles.sectionDescription,
-          {
-            color: isDarkMode ? Colors.light : Colors.dark,
-          },
-        ]}>
-        {children}
-      </Text>
+    <View>
+      {/* <ButtonOnPress/> */}
+      {/* <LearnState/> */}
+      {/* <LearnProps/> */}
+      {/* <LearnStyle/> */}
+      {/* <LearnTextInput/> */}
+      {/* <LearnForm/> */}
+      {/* <LearnFlatList/> */}
+      {/* <LearnCustomList/> */}
+      {/* <LearnDynamicGrid/> */}
+      {/* <LearnLoopWithFlatlist/> */}
+      {/* <LearnSectionList/> */}
+      {/* <LearnUseEffect/> */}
+      {/* <ComponentDidUpdate/> */}
+      {/* <HideShow/> */}
+      {/* <ComponentDidUnmount/> */}
+      {/* main Component Use only in app       */}
+      {/* <Flex/>  */}
+      {/* <TouchableHighlightButton/> */}
+      {/* <TouchOpacity/> */}
+      {/* <MultiRadio/> */}
     </View>
   );
 };
-
-const App: () => Node = () => {
-  const isDarkMode = useColorScheme() === 'dark';
-
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
-
-  return (
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar
-        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-        backgroundColor={backgroundStyle.backgroundColor}
-      />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}>
-        <Header />
-        <View
-          style={{
-            backgroundColor: isDarkMode ? Colors.black : Colors.white,
-          }}>
-          <Section title="Step One">
-            Edit <Text style={styles.highlight}>App.js</Text> to change this
-            screen and then come back to see your edits.
-          </Section>
-          <Section title="See Your Changes">
-            <ReloadInstructions />
-          </Section>
-          <Section title="Debug">
-            <DebugInstructions />
-          </Section>
-          <Section title="Learn More">
-            Read the docs to discover what to do next:
-          </Section>
-          <LearnMoreLinks />
-        </View>
-      </ScrollView>
-    </SafeAreaView>
-  );
-};
-
-const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-  },
-  highlight: {
-    fontWeight: '700',
-  },
-});
 
 export default App;
